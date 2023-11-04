@@ -8,10 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var startButton: UIButton!
+    
+    @IBAction func startPressed(_ sender: Any) {
+        print("Botão pressionado")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureLayout()
+    }
+    
+    func configureLayout(){
+        startButton.layer.cornerRadius = 12.0
     }
 
 
