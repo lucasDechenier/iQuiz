@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
     
     func configureLayout(){
+        navigationItem.hidesBackButton = true
         startButton.layer.cornerRadius = 12.0
     }
 

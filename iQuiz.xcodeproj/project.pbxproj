@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621A883D2AF9A47600C582AA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A883C2AF9A47600C582AA /* Question.swift */; };
+		621A883F2AF9B88000C582AA /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A883E2AF9B88000C582AA /* PerformanceViewController.swift */; };
+		621A88442AF9C0E500C582AA /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A88432AF9C0E500C582AA /* UIColor+.swift */; };
 		62D044BB2AF5C21F00DEBF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D044BA2AF5C21F00DEBF5D /* AppDelegate.swift */; };
 		62D044BD2AF5C21F00DEBF5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D044BC2AF5C21F00DEBF5D /* SceneDelegate.swift */; };
 		62D044BF2AF5C21F00DEBF5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D044BE2AF5C21F00DEBF5D /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		621A883C2AF9A47600C582AA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		621A883E2AF9B88000C582AA /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
+		621A88432AF9C0E500C582AA /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		62D044B72AF5C21F00DEBF5D /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D044BA2AF5C21F00DEBF5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D044BC2AF5C21F00DEBF5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		621A88402AF9C03800C582AA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				621A883E2AF9B88000C582AA /* PerformanceViewController.swift */,
+				62D044CE2AF5CD9900DEBF5D /* QuestionViewController.swift */,
+				62D044BE2AF5C21F00DEBF5D /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		621A88412AF9C07F00C582AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				621A883C2AF9A47600C582AA /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		621A88422AF9C0CC00C582AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				621A88432AF9C0E500C582AA /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		62D044AE2AF5C21E00DEBF5D = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +90,15 @@
 		62D044B92AF5C21F00DEBF5D /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				621A88422AF9C0CC00C582AA /* Extensions */,
+				621A88412AF9C07F00C582AA /* Models */,
+				621A88402AF9C03800C582AA /* ViewController */,
 				62D044BA2AF5C21F00DEBF5D /* AppDelegate.swift */,
 				62D044BC2AF5C21F00DEBF5D /* SceneDelegate.swift */,
-				62D044BE2AF5C21F00DEBF5D /* ViewController.swift */,
 				62D044C02AF5C21F00DEBF5D /* Main.storyboard */,
 				62D044C32AF5C22000DEBF5D /* Assets.xcassets */,
 				62D044C52AF5C22000DEBF5D /* LaunchScreen.storyboard */,
 				62D044C82AF5C22000DEBF5D /* Info.plist */,
-				62D044CE2AF5CD9900DEBF5D /* QuestionViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -141,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621A883D2AF9A47600C582AA /* Question.swift in Sources */,
 				62D044BF2AF5C21F00DEBF5D /* ViewController.swift in Sources */,
 				62D044BB2AF5C21F00DEBF5D /* AppDelegate.swift in Sources */,
 				62D044CF2AF5CD9900DEBF5D /* QuestionViewController.swift in Sources */,
 				62D044BD2AF5C21F00DEBF5D /* SceneDelegate.swift in Sources */,
+				621A883F2AF9B88000C582AA /* PerformanceViewController.swift in Sources */,
+				621A88442AF9C0E500C582AA /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
