@@ -65,51 +65,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título da questão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7R-oa-G6X">
-                                <rect key="frame" x="64" y="111.99999999999999" width="265" height="38.333333333333329"/>
+                                <rect key="frame" x="55" y="100" width="283" height="38.333333333333343"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-kf-0DR">
-                                <rect key="frame" x="64" y="222.33333333333334" width="265" height="62.000000000000028"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-kf-0DR">
+                                <rect key="frame" x="64" y="210.33333333333334" width="265" height="62.000000000000028"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Pd8-FV-rNd"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="reponsePressed:" destination="R7n-1i-akX" eventType="touchUpInside" id="FPD-Gc-Igd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu8-gW-fBB">
-                                <rect key="frame" x="64" y="316.33333333333331" width="265" height="62"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu8-gW-fBB">
+                                <rect key="frame" x="64" y="304.33333333333331" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="OA6-l0-Opn"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02">
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="reponsePressed:" destination="R7n-1i-akX" eventType="touchUpInside" id="kpE-gg-arJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hf-9G-vE8">
-                                <rect key="frame" x="64" y="410.33333333333331" width="265" height="62"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hf-9G-vE8">
+                                <rect key="frame" x="64" y="398.33333333333331" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="llr-rg-hWb"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03">
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -120,18 +120,17 @@
                         <viewLayoutGuide key="safeArea" id="zik-Ok-IBU"/>
                         <color key="backgroundColor" red="0.32156862749999998" green="0.1176470588" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="zik-Ok-IBU" firstAttribute="trailing" secondItem="x7R-oa-G6X" secondAttribute="trailing" constant="55" id="2yv-B3-nHC"/>
                             <constraint firstItem="6Hf-9G-vE8" firstAttribute="leading" secondItem="zik-Ok-IBU" secondAttribute="leading" constant="64" id="357-Gm-qYL"/>
-                            <constraint firstItem="zik-Ok-IBU" firstAttribute="trailing" secondItem="6Hf-9G-vE8" secondAttribute="trailing" constant="64" id="8tJ-kS-BMy"/>
+                            <constraint firstItem="x7R-oa-G6X" firstAttribute="leading" secondItem="zik-Ok-IBU" secondAttribute="leading" constant="55" id="4UC-8G-YIl"/>
                             <constraint firstItem="zik-Ok-IBU" firstAttribute="trailing" secondItem="xu8-gW-fBB" secondAttribute="trailing" constant="64" id="9DX-ff-jXi"/>
                             <constraint firstItem="6Hf-9G-vE8" firstAttribute="leading" secondItem="zik-Ok-IBU" secondAttribute="leading" constant="64" id="Baz-Zc-A33"/>
                             <constraint firstItem="xu8-gW-fBB" firstAttribute="leading" secondItem="zik-Ok-IBU" secondAttribute="leading" constant="64" id="CW0-cU-HXC"/>
                             <constraint firstItem="6Hf-9G-vE8" firstAttribute="top" secondItem="xu8-gW-fBB" secondAttribute="bottom" constant="32" id="Oei-AD-k9p"/>
                             <constraint firstItem="zik-Ok-IBU" firstAttribute="trailing" secondItem="hlv-kf-0DR" secondAttribute="trailing" constant="64" id="SQp-kb-OpI"/>
                             <constraint firstItem="hlv-kf-0DR" firstAttribute="leading" secondItem="zik-Ok-IBU" secondAttribute="leading" constant="64" id="ZXM-ud-m1Q"/>
-                            <constraint firstItem="x7R-oa-G6X" firstAttribute="top" secondItem="zik-Ok-IBU" secondAttribute="top" constant="112" id="fh4-71-Pib"/>
+                            <constraint firstItem="x7R-oa-G6X" firstAttribute="top" secondItem="zik-Ok-IBU" secondAttribute="top" constant="100" id="elx-qk-DrY"/>
                             <constraint firstItem="zik-Ok-IBU" firstAttribute="trailing" secondItem="6Hf-9G-vE8" secondAttribute="trailing" constant="64" id="h4h-eU-ov4"/>
-                            <constraint firstItem="x7R-oa-G6X" firstAttribute="leading" secondItem="zik-Ok-IBU" secondAttribute="leading" constant="64" id="moe-np-VJG"/>
-                            <constraint firstItem="zik-Ok-IBU" firstAttribute="trailing" secondItem="x7R-oa-G6X" secondAttribute="trailing" constant="64" id="noj-Oa-VZV"/>
                             <constraint firstItem="xu8-gW-fBB" firstAttribute="top" secondItem="hlv-kf-0DR" secondAttribute="bottom" constant="32" id="tnw-4y-BPm"/>
                             <constraint firstItem="hlv-kf-0DR" firstAttribute="top" secondItem="x7R-oa-G6X" secondAttribute="bottom" constant="72" id="xZ7-vt-aUO"/>
                         </constraints>
@@ -243,6 +242,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="stl-w1-VK1"/>
         <segue reference="HXy-KT-Z27"/>
     </inferredMetricsTieBreakers>
     <resources>

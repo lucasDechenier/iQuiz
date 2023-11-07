@@ -10,11 +10,15 @@ import UIKit
 class QuestionViewController: UIViewController {
     var score = 0
     var questionNumber = 0
+    var isAnswered = false
     
     @IBOutlet weak var titleQuestionLabel: UILabel!
     @IBOutlet var responseButtons: [UIButton]!
     
     @IBAction func reponsePressed(_ sender: UIButton) {
+        guard !isAnswered else { return }
+        
+        isAnswered = true
         let isRightAnswer = questions[questionNumber].correctResponse == sender.tag
         if (isRightAnswer){
             score += 1
@@ -51,6 +55,7 @@ class QuestionViewController: UIViewController {
     }
     
     @objc func configureQuestion(){
+        isAnswered = false
         titleQuestionLabel.text = questions[questionNumber].title
         for button in responseButtons {
             let buttonTitle = questions[questionNumber].responses[button.tag]
